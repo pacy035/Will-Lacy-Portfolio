@@ -1,0 +1,100 @@
+/* stylelint-disable media-feature-range-notation */
+.tags-heading {
+  a {
+    color: $white;
+  }
+}
+
+.tag-list {
+  margin-bottom: 15px;
+  list-style: none;
+
+  li {
+    float: left;
+    width: 220px;
+  }
+}
+
+.wordcloud {
+  width: 100%;
+  height: 250px;
+
+  @media only screen and (min-width: 640px) {
+    height: 450px;
+  }
+}
+
+.jqcloud {
+  font-family: $headings-font-family;
+
+  .w10 {
+    font-size: 170%;
+    font-weight: 900;
+    color: $nocc-tag-10;
+  }
+
+  .w9 {
+    font-size: 160%;
+    font-weight: 900;
+    color: $nocc-tag-9;
+  }
+
+  .w8 {
+    font-size: 150%;
+    font-weight: 700;
+    color: $nocc-tag-8;
+  }
+
+  .w7 {
+    font-size: 140%;
+    font-weight: 700;
+    color: $nocc-tag-7;
+  }
+
+  .w6 {
+    font-size: 130%;
+    font-weight: 500;
+    color: $nocc-tag-6;
+  }
+
+  .w5 {
+    font-size: 120%;
+    font-weight: 500;
+    color: $nocc-tag-5;
+  }
+
+  .w4 {
+    font-size: 110%;
+    font-weight: 300;
+    color: $nocc-tag-4;
+  }
+
+  .w3 {
+    font-size: 100%;
+    font-weight: 300;
+    color: $nocc-tag-3;
+  }
+
+  .w2 {
+    font-size: 90%;
+    font-weight: 300;
+    color: $nocc-tag-2;
+  }
+
+  .w1 {
+    font-size: 80%;
+    font-weight: 300;
+    color: $nocc-tag-1;
+  }
+
+  a {
+    font-family: $headings-font-family;
+    color: inherit;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: dashed;
+    }
+  }
+}

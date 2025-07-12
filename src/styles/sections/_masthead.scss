@@ -1,0 +1,240 @@
+/* stylelint-disable media-feature-range-notation */
+
+/* Styling for the masthead */
+
+section {
+  &.masthead {
+    position: relative;
+
+    width: 100%;
+    height: 22vh;
+
+    background: no-repeat center;
+    background-color: transparent;
+    background-attachment: scroll;
+    background-size: cover;
+
+    .overlay {
+      position: absolute;
+      z-index: -20;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 22vh;
+
+      opacity: 0.5;
+      background-color: var(--#{$prefix}overlay-bg);
+    }
+
+    .page-heading,
+    .post-heading {
+      padding: 8rem 0;
+
+      font-family: $headings-font-family;
+      color: $white;
+      text-align: center;
+      text-transform: lowercase;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+
+      h1 {
+        color: $white;
+      }
+
+      @media only screen and (min-width: 990px) {
+        color: $white;
+      }
+    }
+
+    .page-heading {
+      h1 {
+        margin-top: 0;
+        font-size: 2rem;
+        font-weight: 900;
+        color: $white;
+      }
+
+      .subheading {
+        display: block;
+
+        margin: 10px 0 0;
+
+        font-family: $headings-font-family;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 1.1;
+        color: $white;
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+
+      @media only screen and (min-width: 990px) {
+        h1 {
+          font-size: 4rem;
+        }
+
+        .subheading {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .post-heading {
+      a {
+        color: $white;
+      }
+
+      .subheading {
+        display: block;
+
+        margin: 10px 0 30px;
+
+        font-family: $headings-font-family;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.1;
+      }
+
+      .tags-heading,
+      .meta {
+        display: none;
+      }
+
+      @media only screen and (min-width: 990px) {
+        .tags-heading,
+        .meta {
+          display: block;
+
+          font-family: $headings-font-family;
+          font-size: 1.2rem;
+          font-weight: 300;
+          font-style: italic;
+          line-height: 1.1;
+          text-transform: none;
+        }
+      }
+    }
+
+    @media only screen and (min-width: 990px) {
+      &.masthead {
+        height: 28vh;
+
+        .overlay {
+          height: 28vh;
+        }
+      }
+    }
+  }
+
+  &.sechead {
+    margin-bottom: 1.5rem;
+
+    @media only screen and (min-width: 990px) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &.smallhead {
+    height: 65px;
+    margin-bottom: 3rem;
+    background-color: var(--#{$prefix}small-head-color);
+  }
+
+  &.homehead {
+    .overlay {
+      position: absolute;
+      z-index: 900;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 35vh;
+
+      opacity: 0.6;
+      background-color: var(--#{$prefix}overlay-bg);
+    }
+
+    .page-heading {
+      position: absolute;
+      z-index: 901;
+
+      width: 100%;
+      margin: auto;
+      padding: 9rem 0;
+
+      font-family: $headings-font-family;
+      text-align: center;
+
+      h1 {
+        margin-top: 30px;
+
+        font-size: 2rem;
+        font-weight: 900;
+        color: $white;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        color: $white;
+      }
+
+      .subheading {
+        display: block;
+
+        margin: 10px 0 0;
+
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.1;
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+
+      @media only screen and (min-width: 990px) {
+        padding: 4rem 0;
+
+        h1 {
+          font-size: 4rem;
+        }
+
+        .subheading {
+          font-size: 2rem;
+        }
+      }
+
+      @media only screen and (min-width: 1536px) {
+        padding: 4rem 0;
+
+        h1 {
+          font-size: 4rem;
+        }
+
+        .subheading {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+section.homehead .home-description {
+  font-size: 1.3rem;
+  font-style: normal;
+  color: var(--#{$prefix}body-color);
+  text-align: center;
+}
+
+.row-heading {
+  background-color: #ccc;
+
+  h2.subheading {
+    color: var(--#{$prefix}body-bg);
+  }
+}

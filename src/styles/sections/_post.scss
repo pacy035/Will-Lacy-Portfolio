@@ -1,0 +1,46 @@
+/* stylelint-disable media-feature-range-notation */
+// Styling for the post page
+.num-posts {
+  position: absolute;
+  margin-bottom: 20px;
+}
+
+.post-preview {
+  > a {
+    color: var(--#{$prefix}secondary-color);
+
+    &:focus,
+    &:hover {
+      color: var(--#{$prefix}primary-color);
+      text-decoration: $link-decoration;
+    }
+
+    > .post-subtitle {
+      margin: 0 0 10px;
+      font-weight: 300;
+      text-transform: lowercase;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  > .post-meta {
+    margin-top: 0;
+    font-size: 16px;
+    font-style: italic;
+    color: $gray-600;
+
+    > a {
+      color: var(--#{$prefix}secondary-color);
+      text-decoration: $link-decoration;
+
+      &:focus,
+      &:hover {
+        color: var(--#{$prefix}primary-color);
+        text-decoration: underline;
+      }
+    }
+  }
+}
