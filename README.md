@@ -1,209 +1,246 @@
-<h1 align="center">A Responsive Bootstrap 5 dual Theme</h1>
-
 <p align="center">
-  <a href="https://bootstrap-theme.notesoncloudcomputing.com/">
-    <img src="https://bootstrap-theme.notesoncloudcomputing.com/assets/vendor/nocc-bootstrap-theme/images/nocc/nocc-theme-showroom.png" alt="NOCC logo" width="800" height="311">
+  <a href="https://getbootstrap.com/">
+    <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo" width="200" height="165">
   </a>
 </p>
 
-[![NOCC package](https://img.shields.io/npm/v/nocc-bootstrap-theme?logo=npm&logoColor=fff)](https://www.npm.im/nocc-bootstrap-theme)
-[![Github-sponsors](https://img.shields.io/static/v1?label=sponsor&message=❤&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/carlesloriente)
-[![NPM Downloads](https://img.shields.io/npm/dm/nocc-bootstrap-theme)](https://www.npm.im/nocc-bootstrap-theme)
-[![Publish Package](https://github.com/carlesloriente/nocc-bootstrap-theme/actions/workflows/publish-release.yml/badge.svg)](https://github.com/carlesloriente/nocc-bootstrap-theme/actions/workflows/publish-release.yml)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg?logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIEdlbmVyYXRvcjogU1ZHIFJlcG8gTWl4ZXIgVG9vbHMgLS0+Cgo8c3ZnCiAgIHdpZHRoPSI4MDBweCIKICAgaGVpZ2h0PSI4MDBweCIKICAgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIKICAgY2xhc3M9Imljb24iCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzgiCiAgIHNvZGlwb2RpOmRvY25hbWU9ImRvY3VtZW50LXN2Z3JlcG8tY29tLnN2ZyIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS4zLjIgKDA5MWUyMGVmMGYsIDIwMjMtMTEtMjUpIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM4IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0ibmFtZWR2aWV3OCIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIGlua3NjYXBlOnpvb209IjEuNDQ4NzUiCiAgICAgaW5rc2NhcGU6Y3g9IjQwMCIKICAgICBpbmtzY2FwZTpjeT0iNDAwIgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMzQ0MCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMzcxIgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnOCIgLz4KICA8cGF0aAogICAgIHN0eWxlPSJmaWxsOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjEuMjgiCiAgICAgZD0iTSA1MDMuMDAyNTksOTEuMzQ3NzEzIEggMTk1LjQyMDE5IFYgOTQyLjExOTA3IGggNjM1LjcyMzkgViAzOTEuMzMzOTEgWiIKICAgICBpZD0icGF0aDEiIC8+CiAgPHBhdGgKICAgICBkPSJNNTEyLjEgNjRIMTcydjg5Nmg2ODBWMzg1LjZMNTEyLjEgNjR6IG0yNzguOCAzMjQuM2gtMjgwdi0yNjVsMjgwIDI2NXpNODA4IDkxNkgyMTZWMTA4aDI3OC42bDAuMiAwLjJ2Mjk2LjJoMzEyLjlsMC4yIDAuMlY5MTZ6IgogICAgIGZpbGw9IiMzOTM5M0EiCiAgICAgaWQ9InBhdGgyIgogICAgIHN0eWxlPSJmaWxsOiNlNmU2ZTYiIC8+Cjwvc3ZnPgo=)](https://raw.githubusercontent.com/carlesloriente/nocc-bootstrap-theme/main/LICENSE)
-[![Socket Badge](https://socket.dev/api/badge/npm/package/nocc-bootstrap-theme)](https://socket.dev/npm/package/nocc-bootstrap-theme)
+<h3 align="center">Bootstrap</h3>
 
-## Introduction
+<p align="center">
+  Sleek, intuitive, and powerful front-end framework for faster and easier web development.
+  <br>
+  <a href="https://getbootstrap.com/docs/5.3/"><strong>Explore Bootstrap docs »</strong></a>
+  <br>
+  <br>
+  <a href="https://github.com/twbs/bootstrap/issues/new?assignees=-&labels=bug&template=bug_report.yml">Report bug</a>
+  ·
+  <a href="https://github.com/twbs/bootstrap/issues/new?assignees=&labels=feature&template=feature_request.yml">Request feature</a>
+  ·
+  <a href="https://themes.getbootstrap.com/">Themes</a>
+  ·
+  <a href="https://blog.getbootstrap.com/">Blog</a>
+</p>
 
-**Are you tired of outdated Bootstrap themes?**
 
-**Say hello to NOCC 🎉**: A Modern Bootstrap 5 Theme!
+## Bootstrap 5
 
-It comes in three powerful options:
+Our default branch is for development of our Bootstrap 5 release. Head to the [`v4-dev` branch](https://github.com/twbs/bootstrap/tree/v4-dev) to view the readme, documentation, and source code for Bootstrap 4.
 
-- **💎 [Jekyll Theme Nocc](https://rubygems.org/gems/jekyll-theme-nocc)**: A Ruby gem that brings the power of NOCC directly to your Jekyll project.
-- **🌟 [Nocc Bootstrap Theme](https://www.npmjs.com/package/nocc-bootstrap-theme)**: An NPM Package that brings the power of NOCC directly to your NodeJS project.
-- **🌐 [Full Site Bundle for Jekyll](https://github.com/carlesloriente/bootstrap-theme-jekyll)**: A complete static website showcasing NOCC's seamless integration. Featuring a beautifully designed homepage, dynamic tag cloud, image gallery, and more.
-
-> **&#9432;** NOCC is a complete replacement for Bootstrap 5.3.3
 
 ## Table of contents
 
-- [Introduction](#introduction)
-- [Table of contents](#table-of-contents)
-- [Features](#features)
+- [Quick start](#quick-start)
+- [Status](#status)
 - [What's included](#whats-included)
-  - [Bundled dependencies](#bundled-dependencies)
-- [Quick Start](#quick-start)
-- [Customize it](#customize-it)
-  - [Installing from source](#installing-from-source)
-    - [Demo website](#demo-website)
-    - [Testing your changes](#testing-your-changes)
-- [Bugs and Issues](#bugs-and-issues)
+- [Bugs and feature requests](#bugs-and-feature-requests)
+- [Documentation](#documentation)
 - [Contributing](#contributing)
-- [Creator](#creator)
+- [Community](#community)
+- [Versioning](#versioning)
+- [Creators](#creators)
 - [Thanks](#thanks)
-- [Copyright and License](#copyright-and-license)
+- [Copyright and license](#copyright-and-license)
 
-## Features
 
-1. **Use of the latest Bootstrap 5 library**
-2. **Fully Responsive and Dual Color (light and dark)**
-3. **CSS and JS files are minimized by default**
-4. **Self-hosted Google web fonts**
-5. **Demo site built-in**
+## Quick start
+
+Several quick start options are available:
+
+- [Download the latest release](https://github.com/twbs/bootstrap/archive/v5.3.3.zip)
+- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
+- Install with [npm](https://www.npmjs.com/): `npm install bootstrap@v5.3.3`
+- Install with [yarn](https://yarnpkg.com/): `yarn add bootstrap@v5.3.3`
+- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrap:5.3.3`
+- Install with [NuGet](https://www.nuget.org/): CSS: `Install-Package bootstrap` Sass: `Install-Package bootstrap.sass`
+
+Read the [Getting started page](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for information on the framework contents, templates, examples, and more.
+
+
+## Status
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/twbs/bootstrap/js.yml?branch=main&label=JS%20Tests&logo=github)](https://github.com/twbs/bootstrap/actions/workflows/js.yml?query=workflow%3AJS+branch%3Amain)
+[![npm version](https://img.shields.io/npm/v/bootstrap?logo=npm&logoColor=fff)](https://www.npmjs.com/package/bootstrap)
+[![Gem version](https://img.shields.io/gem/v/bootstrap?logo=rubygems&logoColor=fff)](https://rubygems.org/gems/bootstrap)
+[![Meteor Atmosphere](https://img.shields.io/badge/meteor-twbs%3Abootstrap-blue?logo=meteor&logoColor=fff)](https://atmospherejs.com/twbs/bootstrap)
+[![Packagist Prerelease](https://img.shields.io/packagist/vpre/twbs/bootstrap?logo=packagist&logoColor=fff)](https://packagist.org/packages/twbs/bootstrap)
+[![NuGet](https://img.shields.io/nuget/vpre/bootstrap?logo=nuget&logoColor=fff)](https://www.nuget.org/packages/bootstrap/absoluteLatest)
+[![Coverage Status](https://img.shields.io/coveralls/github/twbs/bootstrap/main?logo=coveralls&logoColor=fff)](https://coveralls.io/github/twbs/bootstrap?branch=main)
+[![CSS gzip size](https://img.badgesize.io/twbs/bootstrap/main/dist/css/bootstrap.min.css?compression=gzip&label=CSS%20gzip%20size)](https://github.com/twbs/bootstrap/blob/main/dist/css/bootstrap.min.css)
+[![CSS Brotli size](https://img.badgesize.io/twbs/bootstrap/main/dist/css/bootstrap.min.css?compression=brotli&label=CSS%20Brotli%20size)](https://github.com/twbs/bootstrap/blob/main/dist/css/bootstrap.min.css)
+[![JS gzip size](https://img.badgesize.io/twbs/bootstrap/main/dist/js/bootstrap.min.js?compression=gzip&label=JS%20gzip%20size)](https://github.com/twbs/bootstrap/blob/main/dist/js/bootstrap.min.js)
+[![JS Brotli size](https://img.badgesize.io/twbs/bootstrap/main/dist/js/bootstrap.min.js?compression=brotli&label=JS%20Brotli%20size)](https://github.com/twbs/bootstrap/blob/main/dist/js/bootstrap.min.js)
+[![Backers on Open Collective](https://img.shields.io/opencollective/backers/bootstrap?logo=opencollective&logoColor=fff)](#backers)
+[![Sponsors on Open Collective](https://img.shields.io/opencollective/sponsors/bootstrap?logo=opencollective&logoColor=fff)](#sponsors)
+
 
 ## What's included
 
-You'll find all the required directories and files within the download, logically grouping common assets and providing compiled and minified variations.
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations.
 
-### Bundled dependencies
+<details>
+  <summary>Download contents</summary>
 
-- [Bootstrap 5.3.3](https://getbootstrap.com)
-- [jQuery 3.7.1](https://jquery.com)
-- [Clipboard.js 2.0.11](https://clipboardjs.com)
-- [jCloud 2.0.3](https://github.com/mistic100/jQCloud)
-- [Roboto Sans-serif](https://fonts.google.com/specimen/Roboto), [Lora Serif](https://fonts.google.com/specimen/Lora), and [Oxygen Mono](https://fonts.google.com/specimen/Oxygen+Mono) font families
-- [A few Bootstrap 5 icons](https://icons.getbootstrap.com)
+  ```text
+  bootstrap/
+  ├── css/
+  │   ├── bootstrap-grid.css
+  │   ├── bootstrap-grid.css.map
+  │   ├── bootstrap-grid.min.css
+  │   ├── bootstrap-grid.min.css.map
+  │   ├── bootstrap-grid.rtl.css
+  │   ├── bootstrap-grid.rtl.css.map
+  │   ├── bootstrap-grid.rtl.min.css
+  │   ├── bootstrap-grid.rtl.min.css.map
+  │   ├── bootstrap-reboot.css
+  │   ├── bootstrap-reboot.css.map
+  │   ├── bootstrap-reboot.min.css
+  │   ├── bootstrap-reboot.min.css.map
+  │   ├── bootstrap-reboot.rtl.css
+  │   ├── bootstrap-reboot.rtl.css.map
+  │   ├── bootstrap-reboot.rtl.min.css
+  │   ├── bootstrap-reboot.rtl.min.css.map
+  │   ├── bootstrap-utilities.css
+  │   ├── bootstrap-utilities.css.map
+  │   ├── bootstrap-utilities.min.css
+  │   ├── bootstrap-utilities.min.css.map
+  │   ├── bootstrap-utilities.rtl.css
+  │   ├── bootstrap-utilities.rtl.css.map
+  │   ├── bootstrap-utilities.rtl.min.css
+  │   ├── bootstrap-utilities.rtl.min.css.map
+  │   ├── bootstrap.css
+  │   ├── bootstrap.css.map
+  │   ├── bootstrap.min.css
+  │   ├── bootstrap.min.css.map
+  │   ├── bootstrap.rtl.css
+  │   ├── bootstrap.rtl.css.map
+  │   ├── bootstrap.rtl.min.css
+  │   └── bootstrap.rtl.min.css.map
+  └── js/
+      ├── bootstrap.bundle.js
+      ├── bootstrap.bundle.js.map
+      ├── bootstrap.bundle.min.js
+      ├── bootstrap.bundle.min.js.map
+      ├── bootstrap.esm.js
+      ├── bootstrap.esm.js.map
+      ├── bootstrap.esm.min.js
+      ├── bootstrap.esm.min.js.map
+      ├── bootstrap.js
+      ├── bootstrap.js.map
+      ├── bootstrap.min.js
+      └── bootstrap.min.js.map
+  ```
+</details>
 
-## Quick Start
+We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). [Source maps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/).
 
-Select your favourite package manager and follow the instructions below.
 
-- Install with npm:
+## Bugs and feature requests
 
-```bash
-  npm install nocc-bootstrap-theme --save
-```
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/twbs/bootstrap/blob/main/.github/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new/choose).
 
-- Install with yarn:
 
-```bash
-  yarn add nocc-bootstrap-theme
-```
+## Documentation
 
-- Install with Composer:
+Bootstrap's documentation, included in this repo in the root directory, is built with [Hugo](https://gohugo.io/) and publicly hosted on GitHub Pages at <https://getbootstrap.com/>. The docs may also be run locally.
 
-```bash
-  composer require nocc-bootstrap-theme
-```
+Documentation search is powered by [Algolia's DocSearch](https://docsearch.algolia.com/).
 
-The package folder structure looks like this:
+### Running documentation locally
 
-```filesystem
-  nocc-bootstrap-theme/
-  ├─ css/
-  ├─ fonts/
-  ├─ icons/
-  ├─ images/
-  ├─ js/
-  └─ src/
-```
+1. Run `npm install` to install the Node.js dependencies, including Hugo (the site builder).
+2. Run `npm run test` (or a specific npm script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
+3. From the root `/bootstrap` directory, run `npm run docs-serve` in the command line.
+4. Open `http://localhost:9001/` in your browser, and voilà.
 
-- The `css/nocc-theme.css` (or the minified `nocc-theme.min.css`) file loads the fonts and icons. Remember to include JavaScript files and images in your project.
+Learn more about using Hugo by reading its [documentation](https://gohugo.io/documentation/).
 
-You can also import the source SCSS files to your manifest (e.g. index.scss).
+### Documentation for previous releases
 
-```scss
-  @import "nocc-bootstrap-theme/src/styles/main.scss";
-```
+You can find all our previous releases docs on <https://getbootstrap.com/docs/versions/>.
 
-If you need documentation or help with Bootstrap or its components in general, please head over to [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
+[Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.
 
-## Customize it
-
-You can change or use this theme in your own Sass code; please download the source code from the [GitHub repository](https://github.com/carlesloriente/nocc-bootstrap-theme) and change it.
-
-### Installing from source
-
-- Install node v20.10.0 or higher
-- Clone project `git clone --recursive git@github.com:carlesloriente/nocc-bootstrap-theme.git`
-- Go into the project folder `cd nocc-bootstrap-theme`
-- Init the Bootstrap submodule `git submodule update --init --recursive` (only needed the very first time)
-
-The folder structure looks like this:
-
-```filesystem
-  nocc-bootstrap-theme/
-  ├─ bootstrap/
-  ├─ scripts/
-  ├─ src/
-  |  ├─ fonts/
-  |  ├─ icons/
-  |  ├─ images/
-  |  ├─ js/
-  |  └─ styles/
-  └─ static/
-    ├─ gallery/
-    └─ posts/
-```
-
-Install node modules, run the command:
-
-```bash
-  npm install
-```
-
-Build the distribution, run the command:
-
-```bash
-  npm run compile
-```
-
-#### Demo website
-
-The source includes resources for building and running locally a sample website.
-
-If you want to see the theme in action, complete the following steps.
-
-Now, let's build the demo site, run the command:
-
-```bash
-  npm run compile-demo
-```
-
-The folder `demo` contains all the generated site files.
-
-To run the bundled web server, run the command:
-
-```bash
-  npm run server-watch
-```
-
-Additionally, an option builds the files on the fly when there's a change and runs the web server incorporating a watcher, so you can write code and see your changes immediately in the browser. Run the command:
-
-```bash
-  npm run start-demo
-```
-
-#### Testing your changes
-
-If you want to test the code, run the command:
-
-```bash
-  npm run lint
-```
-
-## Bugs and Issues
-
-Have a bug or an issue with this package? [Open a new issue](https://github.com/carlesloriente/nocc-bootstrap-theme/issues) here on GitHub!
 
 ## Contributing
 
-New contributors are always welcome! Check out [CONTRIBUTING.md](https://github.com/carlesloriente/nocc-bootstrap-theme/blob/master/CONTRIBUTING.md) to get involved.
+Please read through our [contributing guidelines](https://github.com/twbs/bootstrap/blob/main/.github/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
-## Creator
+Moreover, if your pull request contains JavaScript patches or features, you must include [relevant unit tests](https://github.com/twbs/bootstrap/tree/main/js/tests). All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
 
-**[Carles Loriente](https://www.linkedin.com/in/carles-loriente/)** is the creator and maintainer of the NOCC Bootstrap theme.
+Editor preferences are available in the [editor config](https://github.com/twbs/bootstrap/blob/main/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
 
-- [Linkedin](https://www.linkedin.com/in/carles-loriente)
-- [Twitter](https://twitter.com/godarthvader)
-- [GitHub](https://github.com/carlesloriente)
+
+## Community
+
+Get updates on Bootstrap's development and chat with the project maintainers and community members.
+
+- Follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap).
+- Read and subscribe to [The Official Bootstrap Blog](https://blog.getbootstrap.com/).
+- Ask questions and explore [our GitHub Discussions](https://github.com/twbs/bootstrap/discussions).
+- Discuss, ask questions, and more on [the community Discord](https://discord.gg/bZUvakRU3M) or [Bootstrap subreddit](https://reddit.com/r/bootstrap).
+- Chat with fellow Bootstrappers in IRC. On the `irc.libera.chat` server, in the `#bootstrap` channel.
+- Implementation help may be found at Stack Overflow (tagged [`bootstrap-5`](https://stackoverflow.com/questions/tagged/bootstrap-5)).
+- Developers should use the keyword `bootstrap` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/browse/keyword/bootstrap) or similar delivery mechanisms for maximum discoverability.
+
+
+## Versioning
+
+For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap is maintained under [the Semantic Versioning guidelines](https://semver.org/). Sometimes we screw up, but we adhere to those rules whenever possible.
+
+See [the Releases section of our GitHub project](https://github.com/twbs/bootstrap/releases) for changelogs for each release version of Bootstrap. Release announcement posts on [the official Bootstrap blog](https://blog.getbootstrap.com/) contain summaries of the most noteworthy changes made in each release.
+
+
+## Creators
+
+**Mark Otto**
+
+- <https://twitter.com/mdo>
+- <https://github.com/mdo>
+
+**Jacob Thornton**
+
+- <https://twitter.com/fat>
+- <https://github.com/fat>
+
 
 ## Thanks
 
-[Bootstrap 5](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+<a href="https://www.browserstack.com/">
+  <img src="https://live.browserstack.com/images/opensource/browserstack-logo.svg" alt="BrowserStack" width="192" height="42">
+</a>
 
-## Copyright and License
+Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test in real browsers!
 
-Copyright (c) 2025 Carles Loriente. Code released under the [MIT](https://github.com/carlesloriente/nocc-bootstrap-theme/blob/master/LICENSE) license.
+<a href="https://www.netlify.com/">
+  <img src="https://www.netlify.com/v3/img/components/full-logo-light.svg" alt="Netlify" width="147" height="40">
+</a>
+
+Thanks to [Netlify](https://www.netlify.com/) for providing us with Deploy Previews!
+
+
+## Sponsors
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/bootstrap#sponsor)]
+
+[![OC sponsor 0](https://opencollective.com/bootstrap/sponsor/0/avatar.svg)](https://opencollective.com/bootstrap/sponsor/0/website)
+[![OC sponsor 1](https://opencollective.com/bootstrap/sponsor/1/avatar.svg)](https://opencollective.com/bootstrap/sponsor/1/website)
+[![OC sponsor 2](https://opencollective.com/bootstrap/sponsor/2/avatar.svg)](https://opencollective.com/bootstrap/sponsor/2/website)
+[![OC sponsor 3](https://opencollective.com/bootstrap/sponsor/3/avatar.svg)](https://opencollective.com/bootstrap/sponsor/3/website)
+[![OC sponsor 4](https://opencollective.com/bootstrap/sponsor/4/avatar.svg)](https://opencollective.com/bootstrap/sponsor/4/website)
+[![OC sponsor 5](https://opencollective.com/bootstrap/sponsor/5/avatar.svg)](https://opencollective.com/bootstrap/sponsor/5/website)
+[![OC sponsor 6](https://opencollective.com/bootstrap/sponsor/6/avatar.svg)](https://opencollective.com/bootstrap/sponsor/6/website)
+[![OC sponsor 7](https://opencollective.com/bootstrap/sponsor/7/avatar.svg)](https://opencollective.com/bootstrap/sponsor/7/website)
+[![OC sponsor 8](https://opencollective.com/bootstrap/sponsor/8/avatar.svg)](https://opencollective.com/bootstrap/sponsor/8/website)
+[![OC sponsor 9](https://opencollective.com/bootstrap/sponsor/9/avatar.svg)](https://opencollective.com/bootstrap/sponsor/9/website)
+
+
+## Backers
+
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/bootstrap#backer)]
+
+[![Backers](https://opencollective.com/bootstrap/backers.svg?width=890)](https://opencollective.com/bootstrap#backers)
+
+
+## Copyright and license
+
+Code and documentation copyright 2011–2024 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors). Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
