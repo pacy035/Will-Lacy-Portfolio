@@ -1,0 +1,101 @@
+landing                 : false
+title                   : Will Lacy's Portfolio & Resume
+author                  : Will Lacy
+url                     : "https://Will-Lacy-Portfolio.com"
+baseurl                 : "/"
+timezone                : "Central Time (US & Canada)"
+description             : A collection of Will Lacy's projects, experiences, certifications, & skills.
+full_description        : false
+gh_repository           : https://github.com/pacy035/WillLacyPortfolio.github.io.git
+encoding                : "utf-8"
+locale                  : "en-US"
+lang                    : "en"
+formemail               : xnnzaajg
+permalink               : pretty
+date                    : 2024-03-24 11:10:45 +0200
+categories              : "bootstrap-theme, nocc, npm, jekyll"
+
+# Features
+critical_css            : false
+
+# Theme Notice (please don't remove it ;))
+theme_version           : v1.3.9
+theme_name              : NOCC Bootstrap Theme
+theme_bundle_repo       : https://github.com/carlesloriente/bootstrap-theme-jekyll/
+theme_repo              : https://github.com/carlesloriente/nocc-bootstrap-theme/
+theme_url               : https://bootstrap-theme.notesoncloudcomputing.com/
+theme_author            : Carles Loriente
+theme_author_url        : https://www.notesoncloudcomputing.com/about/
+theme_download          : https://github.com/carlesloriente/bootstrap-theme-jekyll/archive/refs/heads/main.zip
+theme_package           : https://www.npmjs.com/package/nocc-bootstrap-theme
+theme_logo              : "/assets/vendor/nocc-bootstrap-theme/images/nocc/nocc-theme-webshot.webp"
+bundle_version           : v1.1.9
+
+# Social Profiles
+email                   : "willplcy@gmail.com"
+#twitter_username       : 
+github_username         : pacy035
+#facebook_username      : 
+#instagram_username     : 
+linkedin_username       : willlacy
+#kofi                    : S6S1O2GTU
+
+# Google
+#google_site_verification: imA3xlKv43a50bTrOlAa3eWQ3VBCazAY4Y20KImDXOM
+#google_analytics        : G-SM4Q43P2BB
+
+# Disqus Comments
+# Leave shortname blank to disable comments site-wide.
+# Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+#disqus_shortname        : notes-on-cloud-infrastructure
+
+data_dir                : _data
+includes_dir            : _includes
+layouts_dir             : _layouts
+plugins_dir             : _plugins
+tags_dir                : tags
+
+collections:
+  posts:
+    permalink           : /posts/:name/
+    output              : true
+  tags:
+    permalink           : /tags/:name/
+    output              : true
+
+defaults:
+  - scope:
+      path              : "posts"
+      type              : posts
+    values:
+      layout            : post
+  - scope:
+      path              : 'assets/**'
+    values:
+      sitemap           : false
+
+# Markdown Processors
+kramdown:
+  auto_ids              : true
+  entity_output         : as_char
+  toc_levels            : [1, 2, 3, 4, 5, 6]
+  smart_quotes          : lsquo,rsquo,ldquo,rdquo
+  input                 : GFM
+  hard_wrap             : false
+  footnote_nr           : 1
+  show_warnings         : false
+
+# Build settings
+paginate                : 10
+paginate_path           : "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+sass:
+  load_paths:
+    - ./_sass
+  style                 : compressed
+
+exclude: ["AUTHORS.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md", "CODEOWNERS", "LICENSE", "README.md", "SECURITY.md", "techstack.md", "techstack.yml", "WORKFLOW.md", "bin", "Gemfile", "Gemfile.lock", "manifest.webmanifest", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
